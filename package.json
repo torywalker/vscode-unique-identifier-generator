@@ -1,38 +1,49 @@
 {
-	"name": "ulid-generator",
-	"displayName": "ULID Generator",
-	"description": "A generator for creating new ULIDs",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.30.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.generateUlid"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.generateUlid",
-				"title": "Generate ULID"
-			}
-		]
-	},
-	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"eslint": "^5.13.0",
-		"@types/node": "^8.10.25",
-		"@types/mocha": "^2.2.42"
-	},
-	"dependencies": {
-		"ulid": "^2.3.0"
-	}
+  "name": "ulid-generator",
+  "displayName": "ULID Generator",
+  "description": "A generator for creating new ULIDs",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.generateUlid",
+    "onCommand:extension.generateUuidV1",
+    "onCommand:extension.generateUuidV4"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateUlid",
+        "title": "Generate ULID"
+      },
+      {
+        "command": "extension.generateUuidV1",
+        "title": "Generate UUID V1 (Timestamp)"
+      },
+      {
+        "command": "extension.generateUuidV4",
+        "title": "Generate UUID V4 (Random)"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28",
+    "eslint": "^5.13.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "ulid": "^2.3.0",
+    "uuid": "^3.3.2"
+  }
 }
