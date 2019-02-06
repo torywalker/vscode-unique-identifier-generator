@@ -65,6 +65,7 @@ exports.activate = activate;
 
 module.exports = {
   activate,
+  generate,
   generateUlid,
   generateUuidV1,
   generateUuidV4,
