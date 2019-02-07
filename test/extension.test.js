@@ -26,7 +26,7 @@ describe('General Tests', function() {
   });
 })
 
-describe('Extension Tests', function() {
+describe('Generator Tests', function() {
   const sandbox = sinon.createSandbox();
   sandbox.stub(vscode.window, 'activeTextEditor').value(textEditorMock);
 
@@ -35,7 +35,7 @@ describe('Extension Tests', function() {
     editorSpies.insert.resetHistory();
   });
 
-  it('Generate', function () {
+  it('Generates when passed a value', function () {
     const generated = extension.generate('1234567890');
     assert.strictEqual(10, generated.length);
     assert.equal(true, editorSpies.delete.calledOnce);

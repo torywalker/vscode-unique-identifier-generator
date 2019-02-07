@@ -1,8 +1,8 @@
 {
-  "name": "ulid-generator",
-  "displayName": "ULID Generator",
-  "description": "A generator for creating new ULIDs",
-  "version": "0.0.1",
+  "name": "unique-id-generator",
+  "displayName": "Unique ID Generator (ULID/UUID)",
+  "description": "A generator for creating new ULIDs and UUIDs",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.30.0"
   },
