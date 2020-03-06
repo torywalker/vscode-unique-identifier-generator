@@ -18,6 +18,11 @@
     "onCommand:extension.generateUuidV4"
   ],
   "main": "./extension.js",
+  "publisher": "Tory",
+  "repository": {
+    "type" : "git",
+    "url" : "git+https://github.com/torywalker/vscode-unique-identifier-generator.git"
+  },
   "contributes": {
     "commands": [
       {
