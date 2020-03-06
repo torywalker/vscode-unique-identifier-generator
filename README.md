@@ -3,6 +3,7 @@
 ## Features
 
 Generate unique identifiers that adhere to one of three standards:
+
 - ULID
 - UUID v1 (Timestamp)
 - UUID v4 (Random)
@@ -16,6 +17,11 @@ Generate unique identifiers that adhere to one of three standards:
 ## Usage
 
 Type `CMD`+`shift`+`P` to open the command palette, and type any part of the following commands to autocomplete:
+
 - `generate ULID`
 - `generate UUID v1 (Timestamp)`
 - `generate UUID v4 (Random)`
+
+## Source Code
+
+[Github](https://github.com/torywalker/vscode-unique-identifier-generator)

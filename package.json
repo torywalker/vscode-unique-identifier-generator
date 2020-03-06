@@ -2,7 +2,10 @@
   "name": "unique-id-generator",
   "displayName": "Unique ID Generator (ULID/UUID)",
   "description": "A generator for creating new ULIDs and UUIDs",
-  "version": "0.1.0",
+  "icon": "images/uuidIcon.png",
+  "repository": "git@github.com:torywalker/vscode-unique-identifier-generator.git",
+  "publisher": "Tory",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.30.0"
   },
